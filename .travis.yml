@@ -1,4 +1,4 @@
 langauge: python
 python:
 	- "3.5"
-script: cd test;run_all_unit_tests.py
+script: python3 utest_stuff.py
