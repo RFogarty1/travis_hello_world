@@ -1,4 +1,4 @@
 langauge: python
 python:
-	- "3.5"
-script: python3 utest_stuff.py
+ - "3.5"
+script: python utest_stuff.py
