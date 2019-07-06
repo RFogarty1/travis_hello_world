@@ -9,7 +9,7 @@ def addTwoNumbers(x,y):
 
 class testAddTwoNumbers(unittest.TestCase):
 	def testFailingTest(self):
-		self.assertTrue(True)
+		self.assertTrue(False)
 
 
 if __name__ == '__main__':
