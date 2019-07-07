@@ -17,11 +17,11 @@ before_install:
   # The next couple lines fix a crash with multiprocessing on Travis and are not specific to using Miniconda
   - sudo rm -rf /dev/shm
   - sudo ln -s /run/shm /dev/shm
-# Install packages
+# Install packages - This isnt actualyl a package so no need to do the install
 install:
   - echo $TRAVIS_PYTHON_VERSION
-  - conda install --yes python=$TRAVIS_PYTHON_VERSION numpy 
-  - python setup.py install
+#  - conda install --yes python=$TRAVIS_PYTHON_VERSION numpy 
+#  - python setup.py install
 script:
   - python utest_stuff.py
 
