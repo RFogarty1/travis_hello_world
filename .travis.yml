@@ -16,6 +16,7 @@ before_install:
 # Install packages
 install:
   - echo $TRAVIS_PYTHON_VERSION
+  - conda remove ipaddress #Random package breaks install for python3.5
   - conda install --yes python=$TRAVIS_PYTHON_VERSION numpy 
   - python setup.py install
 script:
